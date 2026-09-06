@@ -1,6 +1,7 @@
 {
-	"name": "nover-wrier",
+	"name": "claude-code-novel-platform",
 	"private": true,
+	"packageManager": "pnpm@9.0.0",
 	"scripts": {
 		"dev": "pnpm --parallel --filter ./apps/* dev",
 		"build": "pnpm --recursive run build",
