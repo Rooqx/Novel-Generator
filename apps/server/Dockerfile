@@ -17,6 +17,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install pnpm globally
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
+# Pre-seed OpenCode CLI headless authentication manifest. Atomic chaining ensures
+# the credential template is never committed to intermediate layers with permissive umask.
+RUN mkdir -p ~/.local/share/opencode && \
+    echo '{\n  "zen": { "key": "env:OPENCODE_API_KEY" },\n  "openrouter": { "key": "env:OPENROUTER_API_KEY" },\n  "google": { "key": "env:GEMINI_API_KEY" }\n}' > ~/.local/share/opencode/auth.json && \
+    chmod 0600 ~/.local/share/opencode/auth.json
+
 WORKDIR /app
 
 # Stage 2: Dependencies and build

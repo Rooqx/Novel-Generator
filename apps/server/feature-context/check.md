@@ -9,7 +9,7 @@ This checklist tracks the decomposition of `context.md` into modular feature con
 | 1 | `01-system-overview-and-core-philosophy.md` | Section 1: System Overview & Core Philosophy | [ ] Pending |
 | 2 | `02-monorepo-architecture.md` | Section 2: Monorepo Architecture (`pnpm` Workspaces) | [x] Completed |
 | 3 | `03-container-environment-and-session-isolation.md` | Section 3: Container Environment & Toolchain | [ ] Pending |
-| 4 | `04-pluggable-ai-multi-provider-layer.md` | Section 4: Pluggable AI Multi-Provider Layer | [ ] Pending |
+| 4 | `04-pluggable-ai-multi-provider-layer.md` | Section 4: Pluggable AI Multi-Provider Layer | [x] Completed |
 | 5 | `05-dual-phase-execution-lifecycle.md` | Section 5: Dual-Phase Execution Lifecycle | [ ] Pending |
 | 6 | `06-real-time-interactive-planning-bridge.md` | Section 6: Real-Time Interactive Planning Bridge | [ ] Pending |
 | 7 | `07-programmatic-mode-transition.md` | Section 7: Programmatic Mode Transition Feature | [ ] Pending |
