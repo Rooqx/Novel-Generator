@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Production builds
+dist/
+build/
+.astro/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Workspaces (session runtime directories)
+workspaces/active/*
+!workspaces/active/.gitkeep
+workspaces/completed/*
+!workspaces/completed/.gitkeep
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Cache
+.cache/
+.parcel-cache/
+.turbo/

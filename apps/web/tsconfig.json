@@ -1,0 +1,3 @@
+{
+	"extends": "@nover-wrier/tsconfig/astro.json"
+}

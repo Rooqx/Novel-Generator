@@ -1,0 +1,29 @@
+{
+	"name": "@nover-wrier/web",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview"
+	},
+	"dependencies": {
+		"@astrojs/react": "^6.0.5",
+		"@astrojs/tailwind": "^6.0.2",
+		"@lucide/astro": "^1.41.0",
+		"@nover-wrier/types": "workspace:*",
+		"@xterm/addon-fit": "^0.11.0",
+		"@xterm/xterm": "^6.0.0",
+		"astro": "^7.3.1",
+		"react": "^19.2.8",
+		"react-dom": "^19.2.8",
+		"socket.io-client": "^4.8.3",
+		"tailwindcss": "^4.3.3"
+	},
+	"devDependencies": {
+		"@nover-wrier/tsconfig": "workspace:*",
+		"@types/react": "^19.2.18",
+		"@types/react-dom": "^19.2.7"
+	}
+}

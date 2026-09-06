@@ -1,0 +1,48 @@
+# Temporary files
+*.tmp
+*.temp
+~*
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Backups and generated archives
+*.bak
+*.backup
+backups/
+
+# Logs
+*.log
+automation/session-summary-*.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# JavaScript
+node_modules/
+
+# IDE
+.vscode/settings.json
+.idea/
+*.sublime-workspace
+
+# Local/private notes
+/personal-notes/
+/drafts-private/
+
+# Generated diagnostic state
+planning/system-health.json
+
+# Claude Code project configuration is intentionally tracked.
+!.claude/

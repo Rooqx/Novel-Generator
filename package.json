@@ -1,0 +1,20 @@
+{
+	"name": "nover-wrier",
+	"private": true,
+	"scripts": {
+		"dev": "pnpm --parallel --filter ./apps/* dev",
+		"build": "pnpm --recursive run build",
+		"test": "vitest run --passWithNoTests",
+		"lint": "biome check .",
+		"format": "biome format --write .",
+		"docker:up": "docker compose up --build",
+		"docker:down": "docker compose down",
+		"clean": "pnpm --recursive run clean && rm -rf node_modules"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.12",
+		"prettier": "^3.9.6",
+		"typescript": "^7.0.2",
+		"vitest": "^5.0.0"
+	}
+}
