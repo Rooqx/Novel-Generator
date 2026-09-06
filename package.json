@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "pnpm --parallel --filter ./apps/* dev",
 		"build": "pnpm --recursive run build",
-		"test": "vitest run --passWithNoTests",
+		"test": "vitest run --passWithNoTests --exclude '**/dist/**'",
 		"lint": "biome check .",
 		"format": "biome format --write .",
 		"docker:up": "docker compose up --build",

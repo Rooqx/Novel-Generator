@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     bash \
     && rm -rf /var/lib/apt/lists/*
 
-# Install pnpm globally
+# Install pnpm globally via Corepack
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
 WORKDIR /app
@@ -38,8 +38,17 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 ENV PORT=3000
+ENV WORKSPACE_BASE_PATH=/workspaces
+ENV ENGINE_TEMPLATE_PATH=/app/engine/template
 
+# Copy built application and dependencies from builder stage
 COPY --from=builder /app /app
+
+# Copy immutable black-box engine template
+COPY engine/ /app/engine/
+
+# Create runtime workspace directories for tenant isolation
+RUN mkdir -p /workspaces/active /workspaces/completed && chmod -R 777 /workspaces
 
 EXPOSE 3000
 
