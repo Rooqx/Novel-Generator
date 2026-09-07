@@ -3,12 +3,11 @@
 	"extends": "./base.json",
 	"compilerOptions": {
 		"module": "commonjs",
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 		"outDir": "./dist",
-		"baseUrl": "./",
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
-		"target": "ES2021",
+		"target": "ES2022",
 		"sourceMap": true,
 		"allowSyntheticDefaultImports": true
 	}
